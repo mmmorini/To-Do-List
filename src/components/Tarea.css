@@ -1,0 +1,47 @@
+.tarea-item {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    box-shadow: 0 3px 5px #00000030;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.tarea-item .buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.tarea-item .buttons button {
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #3b69ff;
+    color: #3b69ff;
+    background-color: #fff;
+    font-size: 12px;
+    transition: color .1s, background .1s;
+    padding: 3px 10px;
+}
+
+.tarea-item .buttons button:hover {
+    color: #fff;
+    background-color: #3b69ff;
+}
+
+
+.tarea-item input {
+    border: none;
+    border-bottom: 1px solid #3b69ff;
+    outline: none;
+    height: 17px;
+    width: 278px;
+}
+
+.completa {
+    filter: grayscale(100%);
+    transform: scale(.98);
+    box-shadow: inset 0 0 10px #00000030;
+}
