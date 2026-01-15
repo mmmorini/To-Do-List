@@ -21,7 +21,7 @@ function Tarea({ tarea, editarTexto, editarTarea, eliminarTarea, completarTarea 
             { tarea.editando ? (
                 <input onKeyDown={handleKeyDownEditar} type='text' value={tarea.texto} onChange={(e) => editarTexto(tarea.id, e.target.value)}></input>
               ) : (
-                <span>{tarea.texto}</span>
+                <span className={tarea.completada ? "tachar" : ""}>{tarea.texto}</span>
               )}
             <div className="buttons">
                 <button onClick={() => eliminarTarea(tarea.id)}>ELIMINAR</button>
