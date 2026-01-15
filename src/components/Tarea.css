@@ -31,7 +31,6 @@
     background-color: #3b69ff;
 }
 
-
 .tarea-item input {
     border: none;
     border-bottom: 1px solid #3b69ff;
@@ -44,4 +43,10 @@
     filter: grayscale(100%);
     transform: scale(.98);
     box-shadow: inset 0 0 10px #00000030;
+}
+
+.tachar {
+    text-decoration: line-through;
+    filter: blur(.8px);
+    user-select: none;
 }
